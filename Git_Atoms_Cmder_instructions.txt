@@ -3,11 +3,16 @@ git config --global user.name jheyer23
 git config --global user.email jheyer2325@gmail.com
 
 ## GitHub Tutorial
+
 cd to worktree folder
   - Needs to be a top directory folder
 
 ## Initialize git repository .git folder in worktree
 git init
+
+## Create a repository in GitHub and connect this git repository to GitHub
+git remote add origin https://github.com/jheyer23/git2.git2
+git push -u origin master
 
 ## Create a file in git repository that can be modified
 ## If close out of Atom and reopen the file should be highlighted green meaning it can be modified and is ready for staging
@@ -36,3 +41,8 @@ git commit -m ""
 
 ## Get id of commit:  [master (root-commit) a9b6778]
 ## Added to commit history
+## All yellow lines are different commits
+git log
+
+## Show all different commits condensed to one line
+git log --oneline
