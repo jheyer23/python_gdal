@@ -50,4 +50,5 @@ git remote add origin https://github.com/jheyer23/git2.git2
 git push -u origin master
 
 ## Pull repository from GitHub
+## Do this outside of worktree or things get messy - just do in Cmder 
 git clone https://github.com/jheyer23/git2.git
