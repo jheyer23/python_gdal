@@ -21,3 +21,18 @@ git status
 
 ## Can remove files that don't want in staging areas
 git rm --cached index.html
+
+## Add all files in directory to staging areas
+git add .
+
+## Why have staging area?
+  - Extra blanket of security. Not committing them hastily
+  - Have to add them to staging area
+  - Commit at logical points
+
+## Commits
+## -m ""   allows us to pass descriptive message about what commit is
+git commit -m ""
+
+## Get id of commit:  [master (root-commit) a9b6778]
+## Added to commit history
