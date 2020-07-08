@@ -48,3 +48,6 @@ git remote add origin https://github.com/jheyer23/git2.git2
 
 ## Push files in this repository to GitHub
 git push -u origin master
+
+## Pull repository from GitHub
+git clone https://github.com/jheyer23/git2.git
