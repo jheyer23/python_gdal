@@ -58,7 +58,7 @@ d
 
 # Set remote git origin
 git remote set-url origin https://github.com/jheyer23/python_gdal.git
-
+asdfasd
 # Remove local .git
 rm -rf .git/
 
