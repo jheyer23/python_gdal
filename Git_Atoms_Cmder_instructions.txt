@@ -1,6 +1,8 @@
-# Have to change director to where master -> origin git project is located
-λ cd D:\GitHub\git1\git2
-D:\GitHub\git1\git2 (master -> origin) - This is where the git project is located 
+# Have to change director to where master -> origin git project is located 
+# Here I'm committing and pushing files to git2, but the master origin (top directory folder in atoms) is git1 
+λ cd D:\GitHub\git1
+D:\GitHub\git1(master -> origin) - This is where the git project is located 
+
 
 # Configure git credentials
 git config --global user.name jheyer23
