@@ -1,60 +1,81 @@
-# Have to change director to where master -> origin git project is located 
-# Here I'm committing and pushing files to git2, but the master origin (top directory folder in atoms) is git1 
-λ cd D:\GitHub\git1
-D:\GitHub\git1(master -> origin) - This is where the git project is located 
-
-
+#------ IF SETTING UP FROM SCRATCH -----#
 # Configure git credentials
-git config --global user.name jheyer23
-git config --global user.email jheyer2325@gmail.com
+λ git config --global user.name jheyer23
+λ git config --global user.email jheyer2325@gmail.com
+λ git config user.name
 
-## GitHub Tutorial
+#----- Step 1. SET LOCAL DIRECTORY ------#
+# Have to change local directory to location of local files
+λ cd D:\GitHub\git1
 
-cd to worktree folder
-  - Needs to be a top directory folder
+# If using Atoms for editing of files then need to "add project folder"
+# For example, "add project folder" to D:\GitHub\git1
+# Then commit and push/pull files to git from this local folder
 
-## Initialize git repository .git folder in worktree
-git init
+#----- Step 2. CREATE REPOSITORY & SET GIT ORIGIN ------#
+# Create a repository in Git to push files from local directory to
+# Remove origin - repository where files are pushed to
+λ git remote rm origin
+# Create a repository in GitHub and connect to this git repository
+λ git remote add origin https://github.com/jheyer23/python.git
+# Configure/set repository created as master/repository where files are pushed to
+λ git config master.remote origin
 
-## Create a file in git repository that can be modified
-## If close out of Atom and reopen the file should be highlighted green meaning it can be modified and is ready for staging
-touch index.html
+#----- Step 3. INITIALIZE ------#
 
-## Add file to staging
-git add index.html
+# Initialize git repository .git folder in worktree
+λ git init
+
+## Add all files that have been modified in local directory to staging areas
+λ git add .
+
+#----- Step 4. STAGING ------#
+
+## Commit files in staging area
+## -m ""   allows us to pass descriptive message about what commit is
+λ git commit -m ""
 
 ## See status of file in staging to see if it has been committed
-git status
+λ git status
+
+## Get id of commits:
+## Added to commit history
+## All yellow lines are different commits
+λ git log
+
+## Show all different commits condensed to one line
+λ git log --oneline
+
+#----- Step 5. ------#
+## Push files in this repository to GitHub git repository
+λ git push -u origin master
+
+#----- PULL REPOSITORY FROM GITHUB ------#
+λ git clone https://github.com/jheyer23/python_gdal.git
+
+
+#------- OTHER GIT COMMANDS -----#
+
+# Git version
+git --version
+
+
+## Create a file in git repository that can be modified in Atoms
+## If close out of Atom and reopen the file should be highlighted green meaning it can be modified and is ready for staging
+λ touch index.html
+
+# Open file in Atom
+Atom index.html
+
+## Add file to staging
+λ git add index.html
 
 ## Can remove files that don't want in staging areas
-git rm --cached index.html
+λ git rm --cached index.html
 
-## Add all files in directory to staging areas
-git add .
+
 
 ## Why have staging area?
   - Extra blanket of security. Not committing them hastily
   - Have to add them to staging area
   - Commit at logical points
-
-## Commits
-## -m ""   allows us to pass descriptive message about what commit is
-git commit -m ""
-
-## Get id of commit:  [master (root-commit) a9b6778]
-## Added to commit history
-## All yellow lines are different commits
-git log
-
-## Show all different commits condensed to one line
-git log --oneline
-
-## Create a repository in GitHub and connect this git repository to GitHub
-git remote add origin https://github.com/jheyer23/git2.git2
-
-## Push files in this repository to GitHub
-git push -u origin master
-
-## Pull repository from GitHub
-## Do this outside of worktree or things get messy - just do in Cmder
-git clone https://github.com/jheyer23/git2.git
