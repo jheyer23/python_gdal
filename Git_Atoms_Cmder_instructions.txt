@@ -56,6 +56,12 @@ d
 
 #------- OTHER GIT COMMANDS -----#
 
+# Set remote git origin
+git remote set-url origin https://github.com/jheyer23/python_gdal.git
+
+# Remove local .git
+rm -rf .git/
+
 # Git version
 git --version
 
