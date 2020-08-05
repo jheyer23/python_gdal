@@ -1,3 +1,7 @@
+# Have to change director to where master -> origin git project is located
+λ cd D:\GitHub\git1\git2
+D:\GitHub\git1\git2 (master -> origin) - This is where the git project is located 
+
 # Configure git credentials
 git config --global user.name jheyer23
 git config --global user.email jheyer2325@gmail.com
@@ -50,5 +54,5 @@ git remote add origin https://github.com/jheyer23/git2.git2
 git push -u origin master
 
 ## Pull repository from GitHub
-## Do this outside of worktree or things get messy - just do in Cmder 
+## Do this outside of worktree or things get messy - just do in Cmder
 git clone https://github.com/jheyer23/git2.git
