@@ -20,7 +20,7 @@
 λ git remote add origin https://github.com/jheyer23/python.git
 # Configure/set repository created as master/repository where files are pushed to
 λ git config master.remote origin
-
+d
 #----- Step 3. INITIALIZE ------#
 
 # Initialize git repository .git folder in worktree
