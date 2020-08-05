@@ -4,6 +4,14 @@
 λ git config --global user.email jheyer2325@gmail.com
 λ git config user.name
 
+####!!!!! SET UP LOCAL REPOSITORY #####!!!!!!!!
+1. Go to GITHUB
+2. Create new repository
+3. Clone repository to local directory
+git clone https://github.com/jheyer23/python_gdal.git
+4. You can then change directory to repository and push from the repository to git
+
+
 #----- Step 1. SET LOCAL DIRECTORY ------#
 # Have to change local directory to location of local files
 λ cd D:\GitHub\git1
